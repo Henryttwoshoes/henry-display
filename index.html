@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Reset básico e centralização */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a; /* Cor de fundo escura e moderna */
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 400px; /* Tamanho ideal para tela de celular */
+            text-align: center;
+        }
+
+        /* Título ou Nome */
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        /* Grupo de links */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Espaço entre os botões */
+        }
+
+        img {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        /* Estilo dos botões de link */
+        .link-button {
+            display: block;
+            background-color: #1b1b1b; /* Cor do botão */
+            color: rgb(163, 71, 255);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border: 2px solid rgb(163, 71, 255);
+            transition: all 0.2s ease;
+            
+            /* Evita o "efeito cinza" ao tocar no celular */
+            -webkit-tap-highlight-color: transparent; 
+        }
+
+        /* Efeito ao passar o mouse ou tocar */
+        .link-button:hover, .link-button:active {
+            transform: scale(1.02);
+        }
+
+        .combatente {
+            color: rgb(255, 71, 71);
+            border: 2px solid rgb(255, 71, 71);
+        }
+
+        .especialista {
+            color: rgb(71, 224, 255);
+            border: 2px solid rgb(71, 224, 255);
+        }
+
+        .ocultista {
+            color: rgb(249, 71, 255);
+            border: 2px solid rgb(249, 71, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="margin-top: 30px;">MESA DE ORDEM PARANORMAL</h1>
+        <img src="imagens/Diversao-Offline-Logo-727x393.png" alt="">
+        <h1 style="color: rgb(50, 18, 255); font-weight: bold;">do Henry!</h1>
+        <h1>Links das fichas</h1>
+
+        <div class="links-wrapper">
+            
+            <a href="https://crisordemparanormal.com/agente/Sdc7q7O0gUA0lsDLcUW9" class="link-button combatente">
+                ⚔️ COMBATENTE GUERREIRO
+            </a>
+
+            <a href="https://crisordemparanormal.com/agente/pE83MWjz8uUAqlRsKT0E" class="link-button combatente">
+                🔫 COMBATENTE ANIQUILADOR
+            </a>
+
+            <a href="https://crisordemparanormal.com/agente/n5RwZuegerdAiJ18mlO6" class="link-button especialista">
+                ✍️ ESPECIALISTA NEGOCIADOR
+            </a>
+
+            <a href="https://crisordemparanormal.com/agente/kDnLNBLCxyOrnwUP475B" class="link-button especialista">
+                🧑‍⚕️ ESPECIALISTA MÉDICO DE CAMPO
+            </a>
+
+            <a href="https://crisordemparanormal.com/agente/t2mrjQth5c7n2YxJj4vc" class="link-button ocultista">
+                🎨 OCULTISTA GRADUADO
+            </a>
+
+            <a href="https://crisordemparanormal.com/agente/MWOIyaZ6wruW6s0frrbV" class="link-button ocultista">
+                👷‍♂️ OCULTISTA INTUITIVO
+            </a>
+            
+        </div>
+        <img style="margin: 500px 0 20px 0 ;" src="imagens/ordem-paranormal-gal.gif" alt="">
+    </div>
+    
+</body>
+</html>
