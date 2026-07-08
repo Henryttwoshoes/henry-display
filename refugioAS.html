@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estilizada RPG</title>
+    <style>
+        body {
+            background-color: #fcfaf2;
+            font-family: 'Georgia', serif;
+            
+            
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        /* Container do Cartão */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            background-color: #f7f4eb;
+            border: 2px solid #8c8475;
+            border-radius: 4px;
+            padding: 12px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Estrutura da Tabela */
+        .rpg-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* Células base */
+        .rpg-table td {
+            padding: 10px 5px;
+            border: 1px solid #8c8475;
+            color: #111111;
+        }
+
+        /* Títulos (Tamanho, Perigo, Contaminação, etc) */
+        .label {
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Valores numéricos grandes */
+        .value {
+            font-size: 1.4rem;
+            font-weight: normal;
+        }
+
+        /* Linha para Recursos Naturais */
+        .full-row {
+            padding: 15px 10px !important;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .sub-text {
+            font-size: 0.95rem;
+            color: #222222;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* Linha final do Marco Geográfico */
+        .footer-row {
+            text-align: left !important;
+            padding: 15px 10px !important;
+            font-size: 1.1rem;
+        }
+
+        .bold-text {
+
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <h1>Antartida</h1>
+    <div class="card-container">
+        
+        <table class="rpg-table">
+            <tr>
+                <td class="label" style="width: 33.33%;" contenteditable="true">Tamanho</td>
+                <td class="label" style="width: 33.33%;" contenteditable="true">Perigo</td>
+                <td class="label" style="width: 33.33%;" contenteditable="true">Habitação</td>
+            </tr>
+            <tr>
+                <td class="value" contenteditable="true">2</td>
+                <td class="value" contenteditable="true">4</td>
+                <td class="value" contenteditable="true">0</td>
+            </tr>
+            
+            <tr>
+                <td colspan="3" class="full-row">
+                    <span contenteditable="true" style="font-weight: bold; display: block;">Recursos Naturais</span>
+                    <span class="sub-text" contenteditable="true">3 (Água, Animais e Madeira)</span>
+                    <span class="sub-text" contenteditable="true">(ver "Recursos" - pag. 112)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label" colspan="1" style="width: 50%;" contenteditable="true">Contaminação</td>
+                <td class="label" colspan="2" style="width: 50%;" contenteditable="true">Deslocamento</td>
+            </tr>
+            <tr>
+                <td class="value" colspan="1" contenteditable="true">4</td>
+                <td class="value" colspan="2" contenteditable="true">2</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="footer-row">
+                    <span class="bold-text" contenteditable="true">Marco Geográfico:</span> 
+                    <span contenteditable="true">Laboratório Perdido.</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>Refúgio dos Pinguins</h1>
+    <div class="card-container">
+        <table class="rpg-table">
+            <tbody><tr>
+                <td class="label" style="width: 33.33%;" contenteditable="true">População</td>
+                <td class="label" style="width: 33.33%;" contenteditable="true">Deslocamento</td>
+                <td class="label" style="width: 33.33%;" contenteditable="true">Defesa</td>
+            </tr>
+            <tr>
+                <td class="value" contenteditable="true">2</td>
+                <td class="value" contenteditable="true">3</td>
+                <td class="value" contenteditable="true">3</td>
+            </tr>
+            
+            <tr>
+                <td colspan="3" class="label" style="padding: 12px 0; background-color: rgba(140, 132, 117, 0.05);" contenteditable="true">
+                    Reservas
+                </td>
+            </tr>
+            <tr>
+                <td class="full-row" colspan="1.5" style="width: 50%;">
+                    <span class="sub-text" contenteditable="true">18/20</span>
+                </td>
+                <td class="full-row" colspan="1.5" style="width: 50%;">
+                    <span class="sub-text" contenteditable="true">Alimentos 2<br>Madeira 2<br>Ovelhas 4<br>Medicamentos 1<br>Minerais 2<br>Material de Construção 2<br>Plantas 4</span>
+                </td>
+                <td style="display: none;"></td>
+            </tr>
+
+            <tr>
+                <td class="label" colspan="1.5" style="width: 50%;" contenteditable="true">Moral</td>
+                <td class="label" colspan="1.5" style="width: 50%;" contenteditable="true">Beligerância</td>
+                <td style="display: none;"></td>
+            </tr>
+            <tr>
+                <td class="value" colspan="1.5" contenteditable="true">2</td>
+                <td class="value" colspan="1.5" contenteditable="true">2</td>
+                <td style="display: none;"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 15px 10px;">
+                    <span style="font-weight: bold; font-size: 0.95rem;" contenteditable="true">Construções:</span> 
+                    <span contenteditable="true"><br>Fonte de água<br>Refeitório<br>Pedreira<br>Centro Comunitário(Iglu)<br></span>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+</body>
+</html>
